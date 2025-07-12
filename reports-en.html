@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability Report - Ferrero</title>
+  <meta name="description" content="Download the latest sustainability report of the Ferrero Group." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .bg-reports-page {
+      background-image: url('sfondo-reports.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .btn-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-reports-page min-h-screen flex flex-col items-center justify-center p-4">
+  <!-- Language Switcher -->
+  <div class="absolute top-6 right-6 z-50">
+    <a href="reports.html" class="text-white font-semibold hover:underline mr-4">IT</a>
+    <a href="reports-en.html" class="text-white font-semibold hover:underline">EN</a>
+  </div>
+
+  <div class="w-full max-w-lg bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 text-center">
+    <div class="text-left mb-6">
+      <a href="index-en.html" class="text-green-800 hover:text-green-600 font-semibold transition-colors duration-300">
+        &larr; Back to Home
+      </a>
+    </div>
+
+    <img src="logo-ferrero.png" alt="Ferrero Logo" class="mx-auto mb-6 h-16 w-auto" />
+
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800">
+      Sustainability Report
+    </h1>
+
+    <p class="mt-4 text-gray-700 max-w-md mx-auto">
+      Access the full document to learn more about our commitment to a more sustainable future for the planet and people.
+    </p>
+
+    <div class="my-8 border-t border-gray-300"></div>
+
+    <a href="https://www.ferrero.com/int/sites/ferrero_int/files/2024-05/ferrero_csr_final_28524.pdf"
+       class="btn-download inline-block w-full max-w-md bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg uppercase transition-all duration-300 ease-in-out shadow-lg hover:bg-green-800"
+       target="_blank" rel="noopener noreferrer">
+      DOWNLOAD THE LATEST REPORT
+    </a>
+  </div>
+
+  <footer class="text-center mt-8">
+    <p class="text-sm text-white bg-black bg-opacity-50 px-2 py-1 rounded">
+      &copy; 2025 GANDINO ANDREA
+    </p>
+    <p class="text-xs text-white bg-black bg-opacity-50 px-2 py-1 mt-1 rounded">
+      Project Work developed for the course "Informatica per le Aziende Digitali".
+    </p>
+  </footer>
+</body>
+</html>
