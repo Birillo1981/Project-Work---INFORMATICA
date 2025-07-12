@@ -1,34 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!-- Metadati essenziali per la pagina -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivio della Sostenibilità - Home</title>
-    
-    <!-- Descrizione per i motori di ricerca -->
+    <title>Sostenibilità d'Impresa: Un'Analisi Trasparente</title>
     <meta name="description" content="Un portale per esplorare e comprendere la sostenibilità d'impresa attraverso i report ufficiali.">
-
-    <!-- Inclusione di Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Inclusione del font 'Inter' da Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Stile per l'immagine di sfondo */
+        body { font-family: 'Inter', sans-serif; }
         .bg-hero {
-            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop');
+            background-image: url('https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
-        /* Effetto per il bottone */
         .cta-button:hover {
             transform: scale(1.05);
         }
@@ -36,28 +23,20 @@
 </head>
 <body class="bg-gray-900">
 
-    <!-- Contenitore principale a schermo intero con immagine di sfondo -->
     <div class="bg-hero h-screen w-screen flex flex-col">
-        <!-- Overlay scuro per migliorare la leggibilità del testo -->
         <div class="h-full w-full bg-black bg-opacity-60 flex items-center justify-center text-center text-white p-4">
-            
-            <!-- Contenuto centrale -->
             <div class="max-w-3xl">
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight">
                     Sostenibilità d'Impresa:<br>Uno Sguardo Oltre i Numeri
                 </h1>
-                
                 <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
                     Un report di sostenibilità è il documento con cui un'azienda comunica in modo trasparente il proprio impatto sull'ambiente e sulla società. È uno strumento essenziale per capire il vero valore di un'impresa.
                 </p>
-
-                <!-- Bottone (Call to Action) che porta alla pagina dei report -->
                 <a href="./reports.html" 
                    class="cta-button inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg uppercase mt-10 transition-transform duration-300 ease-in-out shadow-lg hover:bg-green-500">
                     Esplora i Report
                 </a>
             </div>
-
         </div>
     </div>
 
