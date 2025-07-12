@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sostenibilità d'Impresa: Una sfida per il futuro</title>
-    <meta name="description" content="Un portale per esplorare la sostenibilità aziendale.">
+    <title>Sostenibilità d'Impresa: una sfida per il futuro</title>
+    <meta name="description" content="Un portale per esplorare la sostenibilità aziendale attraverso i report ufficiali.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Stile di base per il corpo della pagina */
-        body { 
-            font-family: 'Poppins', sans-serif; 
-        }
-
-        /* Classe per l'immagine di sfondo della sezione principale */
+        body { font-family: 'Poppins', sans-serif; }
         .bg-hero {
+            /* CORREZIONE: Usa il nome del file locale per lo sfondo */
             background-image: url('sfondo-home.jpg');
             background-size: cover;
             background-position: center;
         }
-
-        /* Effetto di ingrandimento per il bottone al passaggio del mouse */
         .cta-button:hover {
             transform: scale(1.05);
         }
@@ -30,31 +24,20 @@
 </head>
 <body class="bg-gray-800">
 
-    <!-- Contenitore principale che occupa l'intera schermata -->
-    <div class="hero-section h-screen w-screen flex flex-col">
-        <!-- Velo scuro sopra l'immagine per rendere il testo più leggibile -->
+    <div class="bg-hero h-screen w-screen flex flex-col">
         <div class="h-full w-full bg-black bg-opacity-60 flex items-center justify-center text-center text-white p-6">
-            
-            <!-- Contenitore per il testo e il bottone -->
             <div class="max-w-3xl">
-                
-                <!-- Titolo principale -->
                 <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
                     Sostenibilità d'Impresa
                 </h1>
-                
-                <!-- Paragrafo di spiegazione -->
                 <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                    Un report di sostenibilità è il documento con cui un'azienda comunica in modo trasparente il proprio impatto sull'ambiente, sulla società e sull'economia. È uno strumento essenziale per capire il vero valore di un'impresa, oltre i soli dati finanziari.
+                    Un report di sostenibilità è un documento con cui un'azienda comunica in modo trasparente il proprio impatto sull'ambiente, sulla società e sull'economia. È uno strumento essenziale per capire il vero valore di un'impresa, oltre i soli dati finanziari.
                 </p>
-
-                <!-- Bottone che porta alla pagina dei report -->
                 <a href="./reports.html" 
                    class="cta-button inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg uppercase mt-10 transition-transform duration-300 ease-in-out shadow-lg hover:bg-green-500">
                     Esplora i Report
                 </a>
             </div>
-
         </div>
     </div>
 
