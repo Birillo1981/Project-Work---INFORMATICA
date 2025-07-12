@@ -3,73 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report di Sostenibilità - Ferrero</title>
+    <title>Report di Sostenibilità - Gruppo Ferrero</title>
     <meta name="description" content="Download dell'ultimo report di sostenibilità del Gruppo Ferrero.">
     <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
     <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
     <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap)" rel="stylesheet">
+    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap)" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-reports-page {
-            /* Modifica: Ora il percorso dell'immagine è locale */
+        body { 
+            font-family: 'Poppins', sans-serif; 
+        }
+        .bg-reports {
             background-image: url('sfondo-reports.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
         }
-        .btn-download:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        .cta-button:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="bg-reports-page min-h-screen flex flex-col items-center justify-center p-4">
+<body class="bg-gray-800">
 
-    <!-- Contenitore principale della card -->
-    <div class="w-full max-w-2xl bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 text-center">
-
-        <!-- Link per tornare alla Home Page -->
-        <div class="text-left mb-6">
-            <a href="./index.html" class="text-green-700 hover:text-green-900 font-semibold transition-colors">
+    <div class="bg-reports h-screen w-screen flex flex-col">
+        <!-- Velo scuro sopra l'immagine per migliorare la leggibilità del testo -->
+        <div class="h-full w-full bg-black bg-opacity-70 flex items-center justify-center text-center text-white p-6 relative">
+            
+            <!-- Link per tornare alla Home Page, posizionato in alto a sinistra -->
+            <a href="./index.html" class="absolute top-8 left-8 text-white hover:text-green-300 font-semibold transition-colors text-lg z-10">
                 &larr; Torna alla Home
             </a>
+
+            <!-- Contenitore per il logo e il bottone -->
+            <div class="max-w-3xl flex flex-col items-center">
+                
+                <!-- Logo Ferrero -->
+                <img src="logo-ferrero.jpg" 
+                    alt="Logo Ferrero" class="h-24 mb-8">
+                
+                <!-- Titolo -->
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+                    Report di Sostenibilità
+                </h1>
+                
+                <!-- Paragrafo di descrizione -->
+                <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    Scarica il documento completo per approfondire l'impegno del Gruppo Ferrero verso un futuro più sostenibile.
+                </p>
+
+                <!-- Bottone di Download che punta al PDF -->
+                <a href="[https://www.ferrero.com/int/sites/ferrero_int/files/2024-05/ferrero_csr_final_28524.pdf](https://www.ferrero.com/int/sites/ferrero_int/files/2024-05/ferrero_csr_final_28524.pdf)" 
+                   class="cta-button inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg uppercase mt-10 transition-transform duration-300 ease-in-out shadow-lg hover:bg-green-500"
+                   target="_blank" rel="noopener noreferrer">
+                    Download Report
+                </a>
+            </div>
+
         </div>
-
-        <!-- Logo -->
-        <!-- Modifica: Ora il percorso dell'immagine è locale -->
-        <img src="logo-ferrero.png" 
-             alt="Logo Ferrero" 
-             class="mx-auto mb-4 h-10 w-auto">
-        
-        <!-- Titolo -->
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">
-            Report di Sostenibilità
-        </h1>
-        
-        <!-- Descrizione -->
-        <p class="mt-4 text-gray-600 max-w-md mx-auto">
-            Accedi al documento completo per approfondire il nostro impegno verso un futuro più sostenibile per il pianeta e le persone.
-        </p>
-
-        <!-- Divisore -->
-        <div class="my-8 border-t border-gray-200"></div>
-
-        <!-- Bottone di Download -->
-        <a href="[https://www.ferrero.com/int/sites/ferrero_int/files/2024-05/ferrero_csr_final_28524.pdf](https://www.ferrero.com/int/sites/ferrero_int/files/2024-05/ferrero_csr_final_28524.pdf)" 
-           class="btn-download inline-block w-full max-w-sm bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg uppercase transition-all duration-300 ease-in-out shadow-lg hover:bg-green-800"
-           target="_blank" rel="noopener noreferrer">
-            SCARICA L'ULTIMO REPORT
-        </a>
     </div>
-
-    <!-- Footer -->
-    <footer class="text-center mt-12">
-        <p class="text-sm text-gray-400/80 backdrop-blur-sm">
-            &copy; 2025 GANDINO ANDREA
-        </p>
-        <p class="text-xs text-gray-400/80 backdrop-blur-sm mt-1">
-            Project Work sviluppato per il corso di Informatica per le Aziende Digitali.
+    
+    <!-- Footer della pagina -->
+    <footer class="absolute bottom-0 w-full text-center p-4">
+        <p class="text-sm text-white/70">
+            &copy; 2025 GANDINO ANDREA - Project Work per il corso di Informatica per le Aziende Digitali.
         </p>
     </footer>
 
