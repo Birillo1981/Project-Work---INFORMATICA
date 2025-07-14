@@ -1,15 +1,29 @@
 <!DOCTYPE html>
+<!-- Dichiara il tipo di documento HTML5 -->
 <html lang="it">
+<!-- Imposta la lingua del documento su italiano -->
 
 <head>
+    <!-- Impostazione della codifica dei caratteri -->
     <meta charset="UTF-8" />
+
+    <!-- Rende il sito responsive: adatto a tutti i dispositivi -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titolo della pagina che appare nella scheda del browser -->
     <title>Sostenibilità d'Impresa: una sfida per il futuro</title>
+
+    <!-- Descrizione della pagina per i motori di ricerca -->
     <meta name="description" content="Un portale per esplorare la sostenibilità aziendale attraverso i report ufficiali." />
+
+    <!-- Inclusione della libreria Tailwind CSS da CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Collegamenti per il caricamento dei font da Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+
     <style>
         /* Imposta 'Poppins' come font di default per tutto il contenuto del 'body'. */
         body {
@@ -18,44 +32,50 @@
 
         /* Stile per l'elemento con classe 'bg-hero' (sezione principale). */
         .bg-hero {
-            background-image: url('sfondo-home.jpg');
-            /* Applica un'immagine di sfondo. */
-            background-size: cover;
-            /* L'immagine copre l'intera area. */
-            background-position: center;
-            /* L'immagine viene centrata. */
-            background-repeat: no-repeat;
-            /* L'immagine non viene ripetuta. */
-            height: 100vh;
-            /* L'altezza della sezione è il 100% dell'altezza visibile dello schermo. */
+            background-image: url('sfondo-home.jpg'); /* Immagine di sfondo */
+            background-size: cover;                  /* L'immagine copre tutta l'area */
+            background-position: center;             /* Posizionata al centro */
+            background-repeat: no-repeat;            /* Non si ripete */
+            height: 100vh;                           /* Altezza pari all'altezza visibile del dispositivo */
         }
 
         /* Effetto al passaggio del mouse sul pulsante con classe 'cta-button'. */
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Ingrandisce leggermente il pulsante (del 5%) */
         }
-        /* Ingrandisce leggermente il pulsante (del 5%). */
     </style>
 </head>
 
 <body class="bg-gray-800">
+    <!-- Corpo del sito con sfondo grigio scuro -->
+
     <div class="bg-hero flex items-center justify-center">
+        <!-- Sezione principale con immagine di sfondo.
+             Centra verticalmente e orizzontalmente il contenuto -->
 
         <div class="bg-black bg-opacity-60 text-white p-6 max-w-3xl text-center rounded-lg mx-4">
+            <!-- Contenitore centrale con sfondo nero semi-trasparente,
+                 testo bianco, padding, bordi arrotondati e larghezza massima -->
 
             <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+                <!-- Titolo principale della pagina con grandezza e spaziatura del testo -->
                 Sostenibilità d'Impresa
             </h1>
 
             <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                <!-- Paragrafo descrittivo con margine superiore,
+                     testo grande, larghezza limitata e spaziatura del testo comoda -->
                 Un report di sostenibilità è un documento con cui un'azienda comunica in modo trasparente il proprio impatto sull'ambiente, sulla società e sull'economia. È uno strumento essenziale per capire il vero valore di un'impresa, oltre i soli dati finanziari.
             </p>
 
             <a href="./reports.html" class="cta-button inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg uppercase mt-10 transition-transform duration-300 ease-in-out shadow-lg hover:bg-green-500">
+                <!-- Pulsante per esplorare i report.
+                     Ha colori accesi, testo in maiuscolo, effetto hover, ombra e animazione fluida -->
                 Esplora i Report
             </a>
 
             <div class="mt-8">
+                <!-- Sezione link per cambiare lingua -->
                 <a href="./index-en.html" class="text-sm text-green-300 hover:text-green-400 underline">
                     English version
                 </a>
